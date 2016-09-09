@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::get('/home', 'pruebacontroller@home');
+Route::get('/', 'sitioController@inicio');
+Route::resource('sitio', 'sitioController');
